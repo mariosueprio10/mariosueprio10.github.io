@@ -22,7 +22,6 @@ body{
 }
 #div3{
     width: 800px;
-    width: 800px;
     background-image: linear-gradient(to right, rgb(87,224,204), rgb(115,59,212));
     display: flex;
     flex-direction: row;
@@ -47,6 +46,12 @@ body{
 }
 
 #sect4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sect5{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,18 +195,18 @@ p{
         
     }
     25%{
-        transform:translatex(70px) translatey(-45px);
+        transform:translatex(50px) translatey(-25px);
 
     }
     50%{
-        transform:translatex(140px) translatey(0px);
+        transform:translatex(120px) translatey(0px);
 
     }
     75%{
-        transform:translatex(210px) translatey(-45px);
+        transform:translatex(170px) translatey(-30px);
     }
     100%{
-        transform:translatex(280px) translatey(-90px);
+        transform:translatex(220px) translatey(-60px);
     }
 }
 
@@ -217,15 +222,15 @@ p{
   
 @keyframes bounce2{
     0%{
-        transform:translatex(-30px) translatey(-130px);
+        transform:translatex(-50px) translatey(-120px);
         
     }
     50%{
-        transform:translatex(-70px) translatey(-100px);
+        transform:translatex(-90px) translatey(-90px);
 
     }
     100%{
-        transform:translatex(20px) translatey(-50px);
+        transform:translatex(0px) translatey(-30px);
     }
 }
 
@@ -245,18 +250,18 @@ p{
         
     }
     25%{
-        transform:translatex(-60px) translatey(-45px);
+        transform:translatex(-80px) translatey(-25px);
 
     }
     50%{
-        transform:translatex(10px) translatey(0px);
+        transform:translatex(-10px) translatey(0px);
 
     }
     75%{
-        transform:translatex(80px) translatey(-45px);
+        transform:translatex(40px) translatey(-30px);
     }
     100%{
-        transform:translatex(150px) translatey(-90px);
+        transform:translatex(90px) translatey(-60px);
     }
 }
 #electric4 {
@@ -270,17 +275,17 @@ p{
 }
 @keyframes bounce4{
     0%{
-        transform:translatex(-100px) translatey(-230px);
+        transform:translatex(-130px) translatey(-190px);
         
     }
     
     50%{
-        transform:translatex(-30px) translatey(-200px);
+        transform:translatex(-90px) translatey(-150px);
 
     }
   
     100%{
-        transform:translatex(-100px) translatey(-170px);
+        transform:translatex(-130px) translatey(-120px);
     }
 }
 
@@ -297,23 +302,26 @@ p{
     background-color: rgb(133, 133, 133);
 }
 
+h3{
+    font-size: 20pt;
+}
+
 /*-----------------------------*/
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
+
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -329,18 +337,18 @@ p{
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -351,7 +359,7 @@ p{
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -360,7 +368,7 @@ p{
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -376,7 +384,7 @@ p{
   background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
